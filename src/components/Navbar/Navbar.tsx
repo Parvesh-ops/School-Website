@@ -1,3 +1,4 @@
+import schoollogo from '../../assets/school logo.jpg'
 import { NavLink } from "react-router-dom";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -21,16 +22,16 @@ const Navbar = () => {
       <nav className="bg-white shadow-md">
         <div className="container mx-auto flex items-center justify-between px-6 py-4">
           
-          {/* Logo and College Name */}
+          {/* Logo and School Name*/}
           <div className="flex items-center space-x-4">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/4345/4345672.png"
-              alt="College Logo"
+              src={schoollogo}
+              alt="School Logo"
               className="h-14 w-14 rounded-full"
             />
             <div>
-              <h1 className="font-bold text-xl text-gray-800">Biratnagar College</h1>
-              <p className="text-red-600 font-bold text-sm">Biratnagar, Koshi Province, Nepal</p>
+              <h1 className="font-bold text-xl text-gray-800">Buddha English Boarding School</h1>
+              <p className="text-red-600 font-bold text-sm">Gramthan-6, Morang, Nepal</p>
             </div>
           </div>
 
@@ -44,7 +45,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center space-x-2">
               <MdEmail className="h-5 w-5" />
-              <p className="text-gray-800 font-bold text-sm">mail@myCollege.edu.np</p>
+              <p className="text-gray-800 font-bold text-sm">mail@BuddhaSchool.edu.np</p>
             </div>
           </div>
         </div>
