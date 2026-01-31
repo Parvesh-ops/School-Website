@@ -25,7 +25,7 @@ const programs: IProgram[] = [
     {
         id: 2,
         program: "Education Programs",
-        title: "Class 10 - 12 Science",
+        title: "+2 Science",
         description: "Advanced Science curriculum designed to prepare students for higher education in engineering, medical, and other science-related fields with practical labs and expert faculty. The program emphasizes hands-on experiments and laboratory work to enhance analytical skills and deepen understanding of scientific concepts. Students are guided by experienced teachers who employ modern teaching methodologies to build strong problem-solving abilities. We aim to inspire curiosity, foster scientific temperament, and prepare students for competitive exams and scientific research opportunities.",
         image: scienceImg,
         reverse: true,
@@ -33,7 +33,7 @@ const programs: IProgram[] = [
     {
         id: 3,
         program: "Education Programs",
-        title: "Class 10 - 12 Commerce",
+        title: "+2 Commerce",
         description: "Commerce stream focused on accounting, economics, and business studies, preparing students for professional courses and future career opportunities in the business world. The curriculum integrates practical projects, case studies, and internships to build real-world skills and industry exposure. Students develop financial literacy, business acumen, and strategic thinking through interactive classroom sessions and business simulations. We aim to nurture competent professionals ready to excel in commerce, finance, management, and entrepreneurship.",
         image: commerceImg,
         reverse: false,
@@ -41,7 +41,7 @@ const programs: IProgram[] = [
     {
         id: 4,
         program: "Education Programs",
-        title: "Class 10 - 12 Hotel Management",
+        title: "+2 Hotel Management",
         description: "Hospitality and Hotel Management program offering practical skills, industry knowledge, and internships to groom future professionals in the hospitality sector. Students learn customer service excellence, front office operations, culinary arts, and hotel administration through comprehensive training modules. The program provides extensive exposure to real hotel environments through industry tie-ups and on-site training at premier hospitality establishments. Our goal is to develop skilled, confident, and professional individuals ready to thrive in the fast-paced and dynamic hospitality industry.",
         image: hotelImg,
         reverse: true,
@@ -82,7 +82,7 @@ const Program = () => {
                             </div>
                             {program.program}
                         </span>
-                        <h3 className="text-4xl font-bold text-gray-800 mb-4 transition-transform duration-300 group-hover:scale-105">
+                        <h3 className="text-4xl font-bold text-blue-600 mb-4 transition-transform duration-300 group-hover:scale-105">
                             {program.title}
                         </h3>
                         <p className="text-gray-600 mb-6 transition-transform duration-300 group-hover:scale-105 py-3">
