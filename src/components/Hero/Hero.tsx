@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import backgroundImg from "../../assets/Background Img.jpg";
 
 const Hero = () => {
+  const navigate = useNavigate()
   return (
     <section
       style={{ backgroundImage: `url(${backgroundImg})` }}
@@ -68,6 +70,7 @@ const Hero = () => {
               hover:scale-105
               active:scale-95
             "
+            onClick={()=>navigate('/program')}
           >
             Explore Programs
           </button>
