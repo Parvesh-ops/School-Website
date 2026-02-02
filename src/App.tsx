@@ -5,6 +5,7 @@ import About from "./pages/About"
 import Program from "./pages/Program"
 import Gallery from "./pages/Gallery"
 import Contact from "./pages/Contact"
+import Visit from "./pages/Visit"
 
 
 const App = () => {
@@ -29,6 +30,10 @@ const App = () => {
         {
           path: 'gallery',
           element: <Gallery />
+        },
+        {
+          path: 'visit',
+          element: <Visit />
         },
         {
           path: 'contact',
