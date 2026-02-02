@@ -36,7 +36,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-gray-200 py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         {/* Heading */}

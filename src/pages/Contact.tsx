@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen  text-slate-50 p-6 md:p-16">
+    <div className="min-h-screen bg-gray-200  text-slate-50 p-6 md:p-16">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
 
