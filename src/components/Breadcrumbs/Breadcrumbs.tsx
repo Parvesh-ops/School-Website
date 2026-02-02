@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Home, ChevronRight, Info, Image, Phone, Newspaper, BookOpen } from "lucide-react";
+import { Home, ChevronRight, Info, Image, Phone, Newspaper, BookOpen, Building2 } from "lucide-react";
 import type { JSX } from "react";
 
 const nameMap: Record<string, string> = {
@@ -8,7 +8,7 @@ const nameMap: Record<string, string> = {
   gallery: "Gallery",
   contact: "Contact",
   news: "News",
-  apply: "Book a Visit",
+  visit: "Book a Visit",
 };
 
 const iconMap: Record<string, JSX.Element> = {
@@ -17,6 +17,7 @@ const iconMap: Record<string, JSX.Element> = {
   gallery: <Image size={15} />,
   contact: <Phone size={15} />,
   news: <Newspaper size={15} />,
+  visit: <Building2 size={15} />, 
 };
 
 const Breadcrumbs = () => {
