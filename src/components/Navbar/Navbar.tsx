@@ -4,7 +4,7 @@ import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Navbar = () => {
- 
+
 
   return (
     <div className="bg-gray-100">
@@ -21,7 +21,7 @@ const Navbar = () => {
       {/* Main Navbar */}
       <nav className="bg-white shadow-md">
         <div className="container mx-auto flex items-center justify-between px-6 py-4">
-          
+
           {/* Logo and School Name*/}
           <div className="flex items-center space-x-4">
             <img
@@ -66,8 +66,7 @@ const Navbar = () => {
                   <NavLink
                     to={link.path}
                     className={({ isActive }) =>
-                      `relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full ${
-                        isActive ? "text-blue-600 font-bold after:w-full" : "hover:text-blue-600"
+                      `relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full ${isActive ? "text-blue-600 font-bold after:w-full" : "hover:text-blue-600"
                       }`
                     }
                   >
@@ -80,14 +79,15 @@ const Navbar = () => {
                 <NavLink
                   to="/apply"
                   className={({ isActive }) =>
-                    `relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full ${
-                      isActive ? "text-blue-600 font-bold after:w-full" : "text-blue-600 hover:text-blue-800 font-bold"
+                    `relative px-4 py-2 rounded-2xl font-semibold border transform transition-all duration-300 ${isActive
+                      ? "text-blue-600 border-blue-600 bg-white"
+                      : "text-gray-800 border-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:scale-105"
                     }`
                   }
                 >
-                  Apply Now
+                  Book a Visit
                 </NavLink>
-                
+
               </li>
             </ul>
           </div>
