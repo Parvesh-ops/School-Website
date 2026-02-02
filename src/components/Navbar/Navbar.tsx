@@ -1,7 +1,7 @@
 import { useState } from "react";
 import schoollogo from '../../assets/school logo.jpg';
 import { NavLink } from "react-router-dom";
-import { FaPhone, FaBars, FaTimes } from "react-icons/fa";
+import { FaPhoneAlt, FaBars, FaTimes } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Navbar = () => {
@@ -48,7 +48,7 @@ const Navbar = () => {
           {/* Desktop Contact Info */}
           <div className="hidden md:flex space-x-6">
             <div className="flex items-center space-x-2">
-              <FaPhone className="h-5 w-5" />
+              <FaPhoneAlt className="h-5 w-5" />
               <p className="text-gray-800 font-bold text-sm">+97700000</p>
             </div>
             <div className="flex items-center space-x-2">
