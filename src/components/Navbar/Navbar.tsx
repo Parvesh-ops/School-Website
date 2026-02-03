@@ -68,7 +68,7 @@ const Navbar = ({ schoolData }: NavbarProps) => {
                     className={({ isActive }) =>
                       isActive
                         ? "text-blue-600 font-bold border-b-2 border-blue-600"
-                        : "text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                        : "text-gray-700 font-medium hover:text-blue-600 transition-colors duration-300"
                     }
                   >
                     {link.name}
@@ -76,9 +76,10 @@ const Navbar = ({ schoolData }: NavbarProps) => {
                 </li>
               ))}
             </ul>
+
             <NavLink
               to="/visit"
-              className="ml-4 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition-all"
+              className="ml-4 px-4 py-2  text-gray-700 font-semibold border border-blue-600 rounded-lg shadow hover:bg-blue-600 transition-all duration-300"
             >
               Book a Visit
             </NavLink>
@@ -106,8 +107,7 @@ const Navbar = ({ schoolData }: NavbarProps) => {
                     to={link.path}
                     onClick={() => setMobileMenuOpen(false)}
                     className={({ isActive }) =>
-                      `block py-2 font-semibold rounded hover:bg-blue-100 ${
-                        isActive ? "text-blue-600" : "text-gray-800"
+                      `block py-2 font-semibold rounded hover:bg-blue-100 ${isActive ? "text-blue-600" : "text-gray-800"
                       }`
                     }
                   >
