@@ -1,4 +1,4 @@
-import SchoolLogo from '../../assets/school logo.jpg'
+import SchoolLogo from '../../assets/schoolLogo.jpg'
 import { IoLocationOutline, IoCallOutline, IoMailOutline, IoTimeOutline, IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoYoutube,} from "react-icons/io5"
 
 const Footer = () => {
