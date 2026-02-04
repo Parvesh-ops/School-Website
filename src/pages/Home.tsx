@@ -1,5 +1,6 @@
 import Hero from "../components/Hero/Hero"
 import Introduction from "../components/Introduction/Introduction"
+import SchoolGallery from "../components/SchoolGallery/SchoolGallery"
 
 
 
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <Hero />
       <Introduction />
+      <SchoolGallery />
     </div>
   )
 }
