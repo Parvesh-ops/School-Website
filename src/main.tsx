@@ -10,6 +10,7 @@ import Program from "./pages/Program"
 import Gallery from "./pages/Gallery"
 import Visit from "./pages/Visit"
 import Contact from "./pages/Contact"
+import News from "./pages/News"
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "news",
+        element: <News />,
       },
     ],
   },
