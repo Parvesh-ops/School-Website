@@ -38,7 +38,6 @@ const Gallery = () => {
                 cursor-pointer
               "
             >
-              {/* Image */}
               <img
                 src={item.image}
                 alt={item.title}
@@ -88,20 +87,8 @@ const Gallery = () => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative max-w-4xl w-full"
+            className="max-w-4xl w-full"
           >
-            {/* Close Button */}
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="
-                absolute -top-10 right-0
-                text-white text-3xl
-                hover:text-red-400
-              "
-            >
-              ✕
-            </button>
-
             {/* Image */}
             <img
               src={selectedImage}
@@ -110,7 +97,8 @@ const Gallery = () => {
                 w-full
                 max-h-[80vh]
                 object-contain
-                rounded-xl
+                rounded-2xl
+                shadow-2xl
               "
             />
 
