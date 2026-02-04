@@ -1,5 +1,4 @@
 # School Website
-
 A small, responsive school website built with React, TypeScript and Vite. This repository contains the frontend for a simple informational site (home, about, programs, gallery, contact) intended to showcase a school's content and assets.
 ---
 ## Live Preview
