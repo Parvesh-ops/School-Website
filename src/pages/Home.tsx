@@ -1,3 +1,4 @@
+import EducationStages from "../components/EducationStage/EducationStage"
 import Hero from "../components/Hero/Hero"
 import Introduction from "../components/Introduction/Introduction"
 import MidBanner from "../components/Midbanner/Midbanner"
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <Introduction />
       <SchoolGallery />
+      <EducationStages />
       <MidBanner />
     </div>
   )
