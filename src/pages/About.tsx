@@ -44,7 +44,7 @@ const About = () => {
                   }`}></span>
               </h3>
 
-             <h3 className="text- md:text-md   text-gray-600 leading-6 font-extralight">{about.description}</h3>
+             <h3 className=" text-sm font-semibold text-black  text-center leading-7  mx-auto">{about.description}</h3>
             </div>
 
           </div>

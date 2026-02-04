@@ -39,12 +39,9 @@ const Program = () => {
                         <h3 className="text-4xl font-bold text-blue-600 mb-4 transition-transform duration-300 group-hover:scale-105">
                             {program.title}
                         </h3>
-                        <p className="text-gray-600 mb-6 transition-transform duration-300 group-hover:scale-105 py-3">
+                        <p className="text-sm font-semibold text-black  text-center leading-7  mx-auto transition-transform duration-300 group-hover:scale-105 py-3">
                             {program.description}
                         </p>
-                        <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-                            Learn More
-                        </button>
                     </div>
                 </div>
             ))}
