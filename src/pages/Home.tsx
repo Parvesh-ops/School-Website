@@ -1,12 +1,13 @@
 import Hero from "../components/Hero/Hero"
-import About from "./About"
+import Introduction from "../components/Introduction/Introduction"
+
 
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <About />
+      <Introduction />
     </div>
   )
 }
