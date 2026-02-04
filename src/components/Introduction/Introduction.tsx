@@ -8,7 +8,7 @@ const Introduction = () => {
 
                 {/* Heading */}
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-                    <span className="text-blue-600">Introduction</span>
+                    <span className="text-black">Introduction</span>
                 </h2>
 
                 {/*Description */}
@@ -24,11 +24,6 @@ const Introduction = () => {
                 </p>
 
             </div>
-            {/* <div className="w-auto  mx-auto h-auto p-4 flex items-center flex-wrap justify-center gap-10 ">
-                <div className="flex min-w-50 py-2 dark:bg-card px-8 items-center  rounded shadow-2xl border cursor-pointer  transition duration-300 ease-in  hover:-translate-1 hover:shadow-2xl"><span className="mr-1 dark:text-white font-medium">500+</span><span className="mr-1 dark:text-white font-medium">Students</span></div>
-                <div className="flex min-w-50 py-2 dark:bg-card px-8 items-center  rounded shadow-2xl border cursor-pointer  transition duration-300 ease-in  hover:-translate-1 hover:shadow-2xl"><span className="mr-1 dark:text-white font-medium">100%</span><span className="mr-1 dark:text-white font-medium">Results</span></div>
-                <div className="flex min-w-50 py-2 dark:bg-card px-8 items-center  rounded shadow-2xl border cursor-pointer  transition duration-300 ease-in  hover:-translate-1 hover:shadow-2xl"><span className="mr-1 dark:text-white font-medium">100%</span><span className="mr-1 dark:text-white font-medium">Services</span></div>
-            </div> */}
             <Stats />
         </section>
     )
