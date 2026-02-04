@@ -92,8 +92,8 @@ const Hero = () => {
               <div className="absolute inset-0 bg-black/60"></div>
 
               {/* Content */}
-              <div className="relative z-10 max-w-7xl px-6 md:px-12 h-full flex flex-col justify-center text-white">
-                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+              <div className="relative z-10 max-w-7xl px-6 md:px-19 h-full flex flex-col justify-center text-white">
+                <h1 className="text-xl md:text-5xl font-extrabold leading-tight tracking-tight">
                   Excellence in <span className="text-blue-400">Education</span>
                 </h1>
 
