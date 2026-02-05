@@ -11,6 +11,7 @@ import Gallery from "./pages/Gallery"
 import Visit from "./pages/Visit"
 import Contact from "./pages/Contact"
 import News from "./pages/News"
+import NewsDetail from "./pages/NewsDetail"
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "news/:id",     //for singlepage
+        element: <NewsDetail />,
       },
       {
         path: "news",

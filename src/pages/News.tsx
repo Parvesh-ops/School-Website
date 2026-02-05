@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { newsData } from "../data/newsData"
 
 
@@ -34,7 +35,7 @@ const News = () => {
                             <img
                                 src={item.image}
                                 alt={item.title}
-                                className="w-full h-48 object-cover"
+                                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                             />
 
                             {/* Content */}
@@ -50,12 +51,13 @@ const News = () => {
                                 </p>
 
                                 {/* Read More */}
-                                <button
+                                <Link
+                                to={`/news/${item.id}`}
                                     className="mt-4 inline-flex items-center gap-2 px-3 py-2 text-blue-600 font-medium text-sm rounded-full
                                              hover:bg-blue-200 hover:text-blue-700 transition-all duration-300"
                                 >
                                     Read More
-                                </button>
+                                </Link>
 
                             </div>
                         </div>
