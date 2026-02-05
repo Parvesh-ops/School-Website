@@ -1,8 +1,9 @@
 import { useState } from "react";
 import type { SchoolInfo } from "../../types/school";
 import { NavLink } from "react-router-dom";
-import { FaBars, FaPhoneAlt, FaTimes, FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaBars, FaPhoneAlt, FaTimes, FaFacebookF, FaTwitter, FaYoutube, FaSun, FaMoon } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useTheme } from "../../context/ThemeContext";
 
 interface NavLinkItem {
   name: string;
@@ -15,6 +16,7 @@ interface NavbarProps {
 
 const Navbar = ({ schoolData }: NavbarProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+  const{darkMode,toggleDarkMode} = useTheme()
 
   const links: NavLinkItem[] = [
     { name: "Home", path: "/" },
@@ -83,6 +85,14 @@ const Navbar = ({ schoolData }: NavbarProps) => {
             >
               Book a Visit
             </NavLink>
+
+             {/* Theme Toggle */}
+            <button
+              onClick={toggleDarkMode}
+              className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:scale-110 transition-transform"
+            >
+              {darkMode ? <FaSun /> : <FaMoon />}
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
