@@ -24,27 +24,27 @@ const NewsDetail = () => {
   }
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-9 bg-gray-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Image */}
         <div className="overflow-hidden rounded-2xl shadow-xl mb-8">
           <img
             src={news.image}
             alt={news.title}
-            className="w-full h-125 object-cover transform hover:scale-105 transition duration-500"
+            className="w-full h-115 object-cover transform hover:scale-105 transition duration-500"
           />
         </div>
 
         {/* Date */}
-        <p className="text-gray-400 text-sm mb-2">{news.date}</p>
+        <p className="text-black font-medium text-sm mb-2">{news.date}</p>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 leading-tight">
           {news.title}
         </h1>
 
         {/* Description */}
-        <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
+        <p className=" text-sm font-semibold text-black leading-7">
           {news.description}
         </p>
       </div>
