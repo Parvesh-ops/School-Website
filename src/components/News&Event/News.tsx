@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { newsData } from "../../data/newsData"
+import { ArrowRight } from "lucide-react"
 
 const News: React.FC = () => {
   const navigate = useNavigate()
@@ -18,8 +19,8 @@ const News: React.FC = () => {
 
       {/* News Grid */}
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {newsData.slice(0, 3).map((news, index) => (
-          <div key={index} className="relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+        {newsData.slice(0, 3).map((news) => (
+          <div key={news.id} className="relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
             {/* Image */}
             <img
               src={news.image}
@@ -45,19 +46,25 @@ const News: React.FC = () => {
         <button
           onClick={() => navigate("/news")}
           className="
-            flex items-center gap-2
-            px-5 py-2
-            bg-gray-100 text-black
-            rounded-full
-            shadow-lg
-            hover:bg-gray-200
-            transition
-            font-medium
-          "
+      group
+      flex items-center gap-2
+      px-5 py-2
+      bg-gray-100 text-black
+      rounded-full
+      shadow-lg
+      hover:bg-gray-200
+      transition
+      font-medium
+      cursor-pointer
+    "
         >
-          View More
+          <span>View More</span>
+          <ArrowRight
+            className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+          />
         </button>
       </div>
+
     </section>
   )
 }
