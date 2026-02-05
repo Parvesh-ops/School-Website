@@ -59,7 +59,7 @@ The project follows modern frontend best practices and is suitable for real-worl
 
 - **Frontend:** React
 - **Language:** TypeScript
-- **Styling:** CSS / Tailwind CSS (if applicable)
+- **Styling:** CSS / Tailwind CSS 
 - **Routing:** React Router
 - **Carousel:** React Slick
 - **Build Tool:** Vite 
