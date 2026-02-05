@@ -1,9 +1,9 @@
 import SchoolLogo from '../../assets/schoolLogo.jpg'
-import { IoLocationOutline, IoCallOutline, IoMailOutline, IoTimeOutline, IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoYoutube,} from "react-icons/io5"
+import { IoLocationOutline, IoCallOutline, IoMailOutline, IoTimeOutline, } from "react-icons/io5"
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 pt-16">
+    <footer className="bg-white border-t border-gray-200 pt-6">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
 
         {/* College Info */}
@@ -11,7 +11,7 @@ const Footer = () => {
           <img
             src={SchoolLogo }
             alt="SchoolLogo "
-            className="w-30 h-30 mb-4"
+            className="w-20 h-20 mb-4"
           />
 
           <p className="text-gray-600 leading-relaxed mb-6">
@@ -20,14 +20,14 @@ const Footer = () => {
             students for success in their academic and professional journeys.
           </p>
 
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-600">
             🌐 Established 2054
           </p>
         </div>
 
         {/* Navigation */}
         <div>
-          <h3 className="text-lg font-semibold text-blue-700 mb-6">
+          <h3 className="text-lg font-semibold text-blue-700 mb-4">
             Navigation
           </h3>
 
@@ -43,7 +43,7 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-lg font-semibold text-blue-700 mb-6">
+          <h3 className="text-lg font-semibold text-blue-700 mb-4">
             Contact Info
           </h3>
 
@@ -72,10 +72,9 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="mt-16 border-t border-gray-200 py-8">
+      {/* <div className="mt-16 border-t border-gray-200 py-8">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
 
-          {/* Social Icons */}
           <div>
             <h4 className="font-semibold mb-3">Follow Us</h4>
             <div className="flex gap-4 text-xl text-blue-600">
@@ -86,7 +85,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Newsletter */}
+    
           <div className="flex flex-col sm:flex-row gap-3 items-center">
             <input
               type="email"
@@ -98,7 +97,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   )
 }
