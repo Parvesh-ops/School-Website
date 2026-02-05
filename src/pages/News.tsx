@@ -23,11 +23,12 @@ const News = () => {
                         <div
                             key={item.id}
                             className="
-                bg-white rounded-2xl overflow-hidden
-                shadow-lg hover:shadow-2xl
-                transition-shadow duration-300
-                cursor-pointer
-              "
+        bg-white rounded-2xl overflow-hidden
+        shadow-lg hover:shadow-2xl
+        transition-all duration-300
+        cursor-pointer
+        group
+      "
                         >
                             {/* Image */}
                             <img
@@ -38,15 +39,29 @@ const News = () => {
 
                             {/* Content */}
                             <div className="p-6">
-                                <p className="text-gray-400 text-sm mb-2">{item.date}</p>
+                                <p className="text-gray-500 text-sm mb-2">{item.date}</p>
+
                                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
                                     {item.title}
                                 </h3>
-                                <p className="text-gray-600">{item.description}</p>
+
+                                <p className="text-gray-600 leading-6 text-sm line-clamp-3">
+                                    {item.description}
+                                </p>
+
+                                {/* Read More */}
+                                <button
+                                    className="mt-4 inline-flex items-center gap-2 px-3 py-2 text-blue-600 font-medium text-sm rounded-full
+                                             hover:bg-blue-200 hover:text-blue-700 transition-all duration-300"
+                                >
+                                    Read More
+                                </button>
+
                             </div>
                         </div>
                     ))}
                 </div>
+
             </div>
         </section>
     )
