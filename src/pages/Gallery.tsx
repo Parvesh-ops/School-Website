@@ -1,20 +1,32 @@
 import { useState } from "react"
 import { galleryData } from "../data/galleryData"
+import { useTheme } from "../context/ThemeContext"
 
 const Gallery = () => {
+  const { darkMode } = useTheme()
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
   const [selectedTitle, setSelectedTitle] = useState<string>("")
 
   return (
-    <section className="py-20 bg-gray-200">
+    <section
+      className={`py-20 transition-colors duration-300
+        ${darkMode ? "bg-black text-white" : "bg-gray-200 text-black"}`}
+    >
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-800">
+          <h2
+            className={`text-5xl md:text-6xl font-bold
+              ${darkMode ? "text-white" : "text-gray-800"}`}
+          >
             Our <span className="text-blue-600">School Gallery</span>
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+
+          <p
+            className={`mt-4 max-w-2xl mx-auto
+              ${darkMode ? "text-gray-400" : "text-gray-600"}`}
+          >
             A glimpse of academic excellence, cultural celebrations, and joyful moments
             from our school life.
           </p>
@@ -30,26 +42,17 @@ const Gallery = () => {
                 setSelectedTitle(item.title)
               }}
               className="
-                group 
-                relative 
-                overflow-hidden 
-                rounded-2xl 
-                shadow-lg 
-                cursor-pointer
+                group relative overflow-hidden
+                rounded-2xl shadow-lg cursor-pointer
               "
             >
               <img
                 src={item.image}
                 alt={item.title}
                 className="
-                  w-full 
-                  h-64 
-                  object-cover
-                  transform 
-                  scale-110 
-                  group-hover:scale-100 
-                  transition-transform 
-                  duration-500
+                  w-full h-64 object-cover
+                  transform scale-110 group-hover:scale-100
+                  transition-transform duration-500
                 "
               />
 
@@ -58,10 +61,8 @@ const Gallery = () => {
                 className="
                   absolute inset-0
                   bg-black/50
-                  opacity-0
-                  group-hover:opacity-100
-                  transition-opacity
-                  duration-500
+                  opacity-0 group-hover:opacity-100
+                  transition-opacity duration-500
                   flex items-center justify-center
                 "
               >
@@ -94,11 +95,9 @@ const Gallery = () => {
               src={selectedImage}
               alt={selectedTitle}
               className="
-                w-full
-                max-h-[80vh]
+                w-full max-h-[80vh]
                 object-contain
-                rounded-2xl
-                shadow-2xl
+                rounded-2xl shadow-2xl
               "
             />
 

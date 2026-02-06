@@ -5,7 +5,7 @@ const About = () => {
   const { darkMode } = useTheme();
 
   return (
-    <section className={`py-20 transition-colors duration-300 ${darkMode ? "bg-gray-900" : "bg-gray-200"}`}>
+    <section className={`py-20 transition-colors duration-300 ${darkMode ? "bg-black" : "bg-gray-200"}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         {/* Heading */}

@@ -32,7 +32,7 @@ const Breadcrumbs = () => {
   return (
     <nav
       className={`px-4 py-2  transition-colors duration-300 ${
-        darkMode ? "bg-gray-900" : "bg-gray-200"
+        darkMode ? "bg-black" : "bg-gray-200"
       }`}
     >
       <ul className={`flex items-center text-l font-semibold transition-colors duration-300 ${darkMode ? "text-gray-300" : "text-gray-700"}`}>
